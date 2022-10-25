@@ -1,0 +1,112 @@
+<section>
+  <div class="grid-container">
+    <div></div>
+    <div>
+      <p>Monster Health:{{ monster }} {{ topAggro }}</p>
+      <button (click)="diceRoll()">Roll</button>
+    </div>
+    <div></div>
+
+    <div class="grid-sub-container">
+      <h3 class="heading-label">Hero 1</h3>
+      <div class="top-row1">
+        <p>
+          Health<br /><small>{{ hero1 }}</small>
+        </p>
+      </div>
+      <div class="top-row2">
+        <p>
+          Aggro <br /><small>{{ hero1aggro }}</small>
+        </p>
+      </div>
+      <div class="top-row3">
+        <p>
+          Action<br /><small>{{ hero1card?.name }}</small>
+        </p>
+      </div>
+      <div class="bottom-row1">
+        <p>
+          Damage<br /><small>{{ hero1card?.damage }}</small>
+        </p>
+      </div>
+      <div class="bottom-row2">
+        <p>
+          Healing<br /><small>{{ hero1card?.heal }}</small>
+        </p>
+      </div>
+      <div class="decklist">
+          <div *ngFor="let card of deck1">
+            <p>{{ card.name }}</p>
+          </div>
+      </div>
+    </div>
+
+    <div class="grid-sub-container">
+      <h3 class="heading-label">Hero 2</h3>
+      <div class="top-row1">
+        <p>
+          Health<br /><small>{{ hero2 }}</small>
+        </p>
+      </div>
+      <div class="top-row2">
+        <p>
+          Aggro <br /><small>{{ hero2aggro }}</small>
+        </p>
+      </div>
+      <div class="top-row3">
+        <p>
+          Action<br /><small>{{ hero2card?.name }}</small>
+        </p>
+      </div>
+      <div class="bottom-row1">
+        <p>
+          Damage<br /><small>{{ hero2card?.damage }}</small>
+        </p>
+      </div>
+      <div class="bottom-row2">
+        <p>
+          Healing<br /><small>{{ hero2card?.heal }}</small>
+        </p>
+      </div>
+      <div class="decklist">
+        <div *ngFor="let card of deck2">
+          <p>{{ card.name }}</p>
+        </div>
+    </div>
+    </div>
+
+    <div class="grid-sub-container">
+      <h3 class="heading-label">Hero 3</h3>
+      <div class="top-row1">
+        <p>
+          Health<br /><small>{{ hero3 }}</small>
+        </p>
+      </div>
+      <div class="top-row2">
+        <p>
+          Aggro <br /><small>{{ hero3aggro }}</small>
+        </p>
+      </div>
+      <div class="top-row3">
+        <p>
+          Action<br /><small>{{ hero3card?.name }}</small>
+        </p>
+      </div>
+      <div class="bottom-row1">
+        <p>
+          Damage<br /><small>{{ hero3card?.damage }}</small>
+        </p>
+      </div>
+      <div class="bottom-row2">
+        <p>
+          Healing<br /><small>{{ hero3card?.heal }}</small>
+        </p>
+      </div>
+      <div class="decklist">
+        <div *ngFor="let card of deck3">
+          <p>{{ card.name }}</p>
+        </div>
+    </div>
+    </div>
+  </div>
+</section>

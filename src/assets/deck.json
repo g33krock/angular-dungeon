@@ -1,0 +1,38 @@
+[
+  {
+    "name": "poke",
+    "damage": 1,
+    "heal": 0,
+    "aggro": 1
+  },
+  {
+    "name": "bandaid",
+    "damage": 0,
+    "heal": 1,
+    "aggro": 1
+  },
+  {
+    "name": "stab",
+    "damage": 2,
+    "heal": 0,
+    "aggro": 2
+  },
+  {
+    "name": "medkit",
+    "damage": 0,
+    "heal": 2,
+    "aggro": 2
+  },
+  {
+    "name": "bash",
+    "damage": 3,
+    "heal": 0,
+    "aggro": 3
+  },
+  {
+    "name": "mend",
+    "damage": 0,
+    "heal": 3,
+    "aggro": 3
+  }
+]
